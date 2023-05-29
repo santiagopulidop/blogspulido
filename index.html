@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Congreso Ingeniería Informática</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Congreso Internacional de Estudiantes de Ingeniería Informática</h1>
+    <div class="image-container">
+        <img src="images/img-ia.png" alt="Descripción de la imagen">
+    </div>
+    <p><b>Fecha:</b> Junio 12 al 15 de 2023</p>
+    <p><b>Lugar:</b> Zoom Meeting</p>
+  </header>
+
+  
+  <main>
+    <h2>Agenda del Congreso</h2>
+    
+    <table id="dia-1">
+      <thead>
+        <tr>
+            <th>Día 1 - Conferencias</th>
+            <th>Duración</th>
+            <th>Expositor</th>
+            <th>Aula</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Avances de Inteligencia Artificial</td>
+            <td>2 horas</td>
+            <td>Profesor Juan Camacho</td>
+            <td>Aula 1</td>
+        </tr>
+        <tr>
+            <td>Computacion en la nube</td>
+            <td>1 hora</td>
+            <td>Profesora Ana Goméz</td>
+            <td>Aula 2</td>
+        </tr>
+        <tr>
+            <td>Habilidades blandas</td>
+            <td>2 horas</td>
+            <td>Psicologo Juanita García</td>
+            <td>Aula 3</td>
+        </tr>
+        <tr>
+            <td>Smart Contracts</td>
+            <td>1.5 horas</td>
+            <td>Profesor Carlos Perez</td>
+            <td>Aula 3</td>
+          </tr>
+        <!-- Agrega más filas para las demás actividades -->
+      </tbody>
+    </table>
+    <table id="dia-2">
+        <thead>
+          <tr>
+            <th>Día 2 - Actividades Prácticas</th>
+            <th>Duración</th>
+            <th>Expositor</th>
+            <th>Aula</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Programando un Arduino</td>
+            <td>2 horas</td>
+            <td>Profesor Jose Alvarez</td>
+            <td>Aula 1</td>
+          </tr>
+          <tr>
+            <td>Analisis exploratorio de datos</td>
+            <td>2 horas</td>
+            <td>Profesora Luisa Jimenez</td>
+            <td>Aula 2</td>
+          </tr>
+          <tr>
+            <td>Desplegando Apps en la nube</td>
+            <td>1.5 horas</td>
+            <td>Profesora Melissa Ocampo</td>
+            <td>Aula 3</td>
+          </tr>
+        </tbody>
+    </table>
+    
+    <section id="formulario-registro">
+      <form  id="survey-form">
+        <h2>Formulario de inscripción</h2>
+      
+        <div class="input-wrapper">
+            <label for="name" id="name-label">Nombre:</label>
+            <input type="text" id=name name="user_name" placeholder="Ingrese su nombre" required>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="email" id="email-label" >Email: </label>
+            <input type="email" id="email" placeholder="Ingrese correo electrónico" required>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="number" id="label-number">Número telefónico:</label>
+            <input type="text" id="tel" placeholder="Número telefónico" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="number" id="label-number">Ocupación:</label>
+          <input type="text" id="ocupacion" placeholder="Ocupación" required>
+      </div>
+      
+        <!-- Barra desplegable  -->
+        <div class="div_select">
+            <h4>Participarás en: </h4>
+            <select name="role" id="dropdown" required>
+                <option disabled selected value>Selecciona una</option>
+                <option value="IA">Inteligencia Artificial</option>
+                <option value="iot">IoT</option>
+                <option value="iot">Computación en la nube</option>
+                <option value="habilidades-blandas">Habilidades Blandas</option>
+                <option value="blockchain">Blockchain</option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+
+        <div class="div_text_area">
+            <p>Cuéntanos qué temas te gustaría ver en el próximo congreso </p>
+            <textarea id="text-area" placeholder="Deja acá tu comentario"></textarea>
+        </div>
+
+        <!-- Boton de envio -->
+
+        <div class="div_submit">
+            <button type="submit" id="submit" class="submit-button">
+                Registrarse
+            </button>
+        </div>
+
+
+
+    </form>
+    </section>
+    
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="sobre-mi-descripcion">
+        
+        <p>Hola, soy Santiago Pulido, apasionado por la tecnología, me encanta aprender y entender cómo funcionan los dispositivos que a diario utilizamos, ¡Es como tener un superpoder!</p>
+      
+        <p>Cuando no estoy programado, la mayor parte de mi tiempo libre trato de dedicarlo a la lectura y a mejorar mis habilidades en la guitarra; como buen latino: me gusta mucho la salsa, la cumbia, el son cubano, y para mí es un privilegio poder tocar estos ritmos en mi guitarra.</p>
+
+        <p>También me gusta compartir mis conocimientos en matemáticas, programación y música, creo que esta es una buena manera de afianzar los aprendizajes y conocimientos, además de ayudar a otras personas.</p>
+        
+        <p>Ejerzo como Test Automation Engineer para la empresa Globant desde hace 2 años y medio, trabajando 
+           para distintos clientes norteamericanos en el sector de EdTech.
+        </p>
+        
+      </div>
+      
+      <h3>Habilidades y Tecnologías</h3>
+      
+      <div class="habilidades-tecnologías row">
+        <ul class="column">
+          <li>Python</li>
+          <li>AWS</li>
+          <li>SQL</li>
+          <li>Postman</li>
+          <li>Automation Testing</li>
+          <li>Maual Testing</li>
+        </ul>
+        <ul class="column">
+          <li>Selenium</li>
+          <li>TestCafe</li>
+          <li>Rest Assured</li>
+          <li>Typrescript</li>
+          <li>Java</li>
+          <li>TestNG</li>
+        </ul>
+        <ul class="column">
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>React</li>
+        </ul>
+        
+      </div>
+    </section>
+    <section id="contacto-redes">
+      <div id="contacto">
+        <h2>¡Contáctame!</h2>
+        <div class="redes">
+          <div>
+            <a href="https://github.com/SantiagoPulidoP/" target="_blank">
+              <img src="images/github.svg" alt="github" id="github">
+            </a>
+          </div>
+          <div>
+            <a href="mailto: santiagopulidopelaez@gmail.com" target="_blank">
+            <img src="images/gmail.svg" alt="gmail" id="gmail">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/santiagopulidop/" target="_blank">
+              <img src="images/linkedin.svg" alt="linkedin" id="linkedin">
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/spulidope" target="_blank">
+            <img src="images/twitter.svg" alt="twitter" id="twitter">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div>
+        <p>&copy; Santiago Pulido Peláez - UNIR 2023</p>
+      </div>
+    </footer>
+    
+    
+  </main>
+</body>
+</html>
